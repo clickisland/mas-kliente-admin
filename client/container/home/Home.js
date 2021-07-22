@@ -1,8 +1,13 @@
-import React from 'react'
- 
-function Home(){
+import React from "react";
+import { jsx, css } from "@emotion/react"; /** @jsx jsx */
 
-    return <div>Home</div>
+function Home() {
+  const homeStyles = css`
+    border: solid 1px black;
+    grid-column: 1 / -1;
+    grid-row: 2;
+  `;
 
+  return <div css={homeStyles}>Home</div>;
 }
-export default Home
+export default Home;
